@@ -465,27 +465,3 @@ for i in lines:
         VarDict[ins[1]] = totalline - totalvarline
         totalvarline -=1
         line -= 1
-
-
-
-
-
-
-
-    
-
-    """if line>=1:
-        previnst = instruction
-    instruction = input().split()
-    line+=1
-    if previnst[0] == "hlt":
-        if instruction != []:
-            print("[ERROR] on line "+ str(line) + " " + ErrorToPrint.Errors["-9"])
-        break
-    StartAssemblingData(instruction)
-    #GiveError(instruction)
-    #print("[ERROR] on line "+ str(line) + " " + ErrorToPrint.Errors["-10"])"""
-
-
-
-
