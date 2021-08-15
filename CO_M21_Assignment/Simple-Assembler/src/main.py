@@ -3,6 +3,7 @@ import OPCodes
 import Registers
 import ErrorToPrint
 import AssemblerFunc as AF
+import GiveFinalOutput as GFO
 
 erDict = {} #{line_number:[errors]}
 line = 0
@@ -443,6 +444,7 @@ f = open("userinput.txt", 'r')
 lines = f.readlines()
 temptotalvar = totalvarline
 prev = ['empty']
+m = 0
 for i in lines:
     if codeline>=1:
         prev = ins
@@ -452,6 +454,7 @@ for i in lines:
     er = checkErrors(ins,prev)
         
     if er != None:                                            #checks Errors
+        m = 1 
         if er == "-8":
             print("[ERROR] "+ ErrorToPrint.Errors[er])
             break
@@ -465,3 +468,6 @@ for i in lines:
         VarDict[ins[1]] = totalline - totalvarline
         totalvarline -=1
         line -= 1
+
+if m == 0:
+    GFO.op()
