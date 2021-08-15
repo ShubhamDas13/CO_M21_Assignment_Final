@@ -2,7 +2,7 @@
 import OPCodes
 import Registers
 import ErrorToPrint
-
+import AssemblerFunc as AF
 
 erDict = {} #{line_number:[errors]}
 line = 0
