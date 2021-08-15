@@ -6,7 +6,6 @@ def giveOutput(isa_opcode, freebits, regs):
     a.write(final_binary)
     a.write('\n')
     a.close()
-    print(final_binary)
 
 
 def Addition(r1,r2,r3):
