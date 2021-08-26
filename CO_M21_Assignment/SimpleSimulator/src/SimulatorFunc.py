@@ -1,4 +1,3 @@
-from os import linesep
 import RegistorValues as RV
 import Storeandprint as SP
 import Data
