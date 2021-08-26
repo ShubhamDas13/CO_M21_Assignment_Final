@@ -1,6 +1,5 @@
 import RegistorValues as RV
 import Storeandprint as SP
-import Data
 
 FlagList = []
 for i in range(256):
